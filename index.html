@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Ahorcado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="img/logo.svg" class="logo"> 
+
+    <main>
+        <section class="btns-inicio">
+            <button class="btn-iniciar">Iniciar Juego</button>
+            <button class="btn-agregar">Agregar Nueva Palabra</button>
+        </section>
+        <section class="palabra-nueva">
+            <section class="campo">
+                <input class="input-palabra-nueva" type="text" placeholder="Ingrese una palabra">
+                <section>
+                    <h5 class="alerta"><i><img src="/img/!.svg" alt="Alerta"></i>Máx. de 8 letras, Solo Mayúsculas, Sin Acentos ni Carácteres Especiales</h5>
+                    <section class="btns-agregar-palabra">
+                        <button class="btn-guardar-empezar">Guardar y empezar</button>
+                        <button class="btn-cancelar">Cancelar</button>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="juego">
+            <section class="dibujo">
+                <canvas id="dibujo" height="360px" width="294px"></canvas>
+            </section>
+            <section class="entrada-juego">
+                <section class="letras">    
+                </section>
+                <section class="lineas">
+                    <span class="linea linea-1"></span>
+                    <span class="linea linea-2"></span>
+                    <span class="linea linea-3"></span>
+                    <span class="linea linea-4"></span>
+                    <span class="linea linea-5"></span>
+                    <span class="linea linea-6"></span>
+                    <span class="linea linea-7"></span>
+                    <span class="linea linea-8"></span>
+                </section>
+                <section class="letras-no">
+              </section>
+            </section>
+            <section class="mensaje">            
+            </section>
+            <section class="btns-juego">
+                <button class="btn-nuevojuego">Nuevo juego</button>
+                <button class="btn-desistir">Desistir</button>
+            </section>
+        </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados | © 2022 Fabián Brochero.</p>
+    </footer>
+    <script src="./ahorcado.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
